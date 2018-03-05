@@ -1,0 +1,34 @@
+# docker: 17.12.0-ce, build c97c6d6
+# docker-compose.yml preferes spaces over tabs
+
+version: '3.3'
+
+services:
+
+  node.youtube.app:
+    container_name: alpine.node.typescript.api.youtube
+    volumes:
+        - ./app:/var/www/app/
+    build:
+        labels:
+            alpine.node.typescript.api.youtube.description: "template for boilerplate"
+        
+        context: ./
+        #context: ./dockerfiles/
+        dockerfile: ./dockerfiles/alpine.node.dockerfile.sh
+        
+    command: npm start
+    
+    # equivilent of docker run -it
+    # stdin_open: true
+    # tty: true
+
+    image: researchranks/alpine.node.typescript.api.youtube:latest
+
+    expose:
+        - 8080
+        - 3000
+
+    ports:
+        - 80:8080
+        - 8080:3000

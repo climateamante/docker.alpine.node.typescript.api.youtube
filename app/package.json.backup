@@ -1,0 +1,15 @@
+{
+  "name": "docker.alpine.node",
+  "version": "0.0.1",
+  "author": "@ResearchRanks",
+  "license": "MIT",
+  "description": "docker: alpine linux with node | lite-server | typescript",
+  "private": true,
+  "scripts": {
+    "lite_server" : "lite-server",
+    "start": "npm run lite_server"
+  },
+  "dependencies": {
+    "lite-server": "^2.3.0"
+  }
+}

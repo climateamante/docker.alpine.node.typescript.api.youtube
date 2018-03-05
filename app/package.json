@@ -1,0 +1,22 @@
+{
+  "name": "app",
+  "version": "0.0.1",
+  "description": "youtube.api",
+  "main": "youtube.api.js",
+  "dependencies": {
+    "google-auth-library": "^1.3.1",
+    "googleapis": "^27.0.0",
+    "opn": "^5.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node google.auth.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "youtube",
+    "api"
+  ],
+  "author": "researchranks",
+  "license": "ISC"
+}

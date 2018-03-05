@@ -1,0 +1,15 @@
+{
+    "injectChanges": true,
+    
+    "port": 8080,
+
+    "watchOptions": {
+        "usePolling": true
+    },
+
+    "files": ["./public/**/*.{html,htm,css,js,md}"],
+
+    "server": {
+            "baseDir": "./public"
+    }
+}

@@ -1,0 +1,19 @@
+# NODE - NPM Modules
+/app/node_modules
+/node_modules
+
+# OSX - Hidden files
+/app/.DS_Store
+.DS_Store
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+
+# KEYS - Google API Credentials
+/app/google.api.token.json
+/app/youtube.api.client.json
+/app/youtube.api.single.json
+/app/youtube.api.key.json
+/app/youtube.api.keys.json
+/app/youtube.api.token.json
