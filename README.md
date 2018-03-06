@@ -62,7 +62,7 @@ docker run \
 -v $PWD/app:/var/www/app \
 -p 80:8080 \
 --name youtube.api.dev \
--it --rm researchranks/alpine.node:8.5.0 npm start
+-it --rm researchranks/alpine.node.typescript.api.youtube:latest npm start
 ```
 
 #### debug:
@@ -73,5 +73,5 @@ docker run \
 -p 80:3000 \
 -p 8080:8080
 --name youtube.api.dev \
--it --rm researchranks/alpine.node:8.5.0 /bin/ash
+-it --rm researchranks/alpine.node.typescript.api.youtube:latest /bin/ash
 ```
