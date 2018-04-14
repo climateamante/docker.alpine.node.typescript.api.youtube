@@ -71,7 +71,7 @@ docker run \
 docker run \
 -v $PWD/app:/var/www/app \
 -p 80:3000 \
--p 8080:8080
+-p 8080:8080 \
 --name youtube.api.dev \
 -it --rm researchranks/alpine.node.typescript.api.youtube:latest /bin/ash
 ```
