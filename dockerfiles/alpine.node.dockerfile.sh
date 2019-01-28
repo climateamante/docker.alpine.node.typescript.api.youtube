@@ -14,12 +14,12 @@ WORKDIR /var/www/app
 
 # installing http-server
 RUN echo 'installing node modules' \
-	&& npm install --save --global typescript@2.5.2 \
-	&& npm install --save --global lite-server@2.3.0 \
-	&& npm install --save --global google-auth-library@1.3.1 \
+    && npm install --save --global typescript@2.5.2 \
+    && npm install --save --global lite-server@2.3.0 \
+    && npm install --save --global google-auth-library@1.3.1 \
     && npm install --save --global googleapis@27.0.0 \
     && npm install --save --global opn@5.2.0 \
-	&& npm cache verify
+    && npm cache verify
 
 #EXPOSE 8080
 # USER app
